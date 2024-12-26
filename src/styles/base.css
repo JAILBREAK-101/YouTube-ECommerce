@@ -1,0 +1,28 @@
+/* Reset every HTML Element to the default state */
+ul, ol {
+    list-style: none;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+img {
+    object-fit: cover;
+}

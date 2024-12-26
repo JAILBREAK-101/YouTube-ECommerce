@@ -1,0 +1,90 @@
+/* Every Utility Reusable Utility class comes in here */
+.bold-text {
+    font-weight: bold;
+}
+
+.bold-text--dark {
+    color: var(--text-color);
+}
+
+.img-50-x-50 {
+    width: 50px;
+    height: 50px;
+}
+
+.img-100-x-100 {
+    width: 100px;
+    height: 100px;
+}
+
+.img-200-x-200 {
+    width: 200px;
+    height: 200px;
+}
+
+.img-300-x-300 {
+    width: 300px;
+    height: 300px;
+}
+
+.img-400-x-400 {
+    width: 400px;
+    height: 400px;
+}
+
+.img-500-x-500 {
+    width: 500px;
+    height: 500px;
+}
+
+.img-600-x-600 {
+    width: 600px;
+    height: 600px;
+}
+
+.img-700-x-700 {
+    width: 700px;
+    height: 700px;
+}
+
+.img-800-x-800 {
+    width: 400px;
+    height: 400px;
+}
+
+.img-900-x-900 {
+    width: 900px;
+    height: 900px;
+}
+
+.img-1000-x-1000 {
+    width: 1000px;
+    height: 1000px;
+}
+
+.button {
+    margin-top: 2.5rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.form-input {
+    border: 0;
+    margin: 0;
+    padding-bottom: 1rem;
+    outline: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--dark-400-color);
+}
+
+.form-button {
+    position: absolute;
+    right: 10px;
+}

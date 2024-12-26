@@ -1,0 +1,57 @@
+/* CSS File for all Variables, Fonts, and Colors */
+/*=====================================================*/
+
+/* Reset the Margin and Padding of the Webpage */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+/* Variables and Colors */
+:root {
+ --primary-color: #3A408C;  
+ --secondary-color: #E2342D; 
+
+ --text-color: #707070;
+
+ --hero-background-color: #F8F8F8;
+ 
+ --light-200-color: #F3F3F3;
+ --light-400-color: #D2D2D2;
+ 
+ --dark-200-color: #4A4B4D;
+ --dark-400-color: #222222;
+ --dark-600-color: #1E1E20;
+ --dark-700-color: #231F20;
+
+ --white: #FFFFFF;
+ --black: #000000;
+}
+
+/* Fonts */
+
+/* Header Font */
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Body / Text Fonts */
+.montserrat-medium {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}

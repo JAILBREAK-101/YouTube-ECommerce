@@ -1,0 +1,234 @@
+.wrapper {
+    min-height: 100%;
+    /* The wrapper is not a flex container but a block containing other elements */
+}
+
+/* Header Section -> Top Nav and Main Nav */
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--light-400-color);
+}
+
+.top-nav-list {
+    display: inherit;
+    gap: 2rem;
+}
+
+.top-nav-items > a {
+    color: var(--dark-200-color);
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.main-nav-list-container {
+     & > .nav-list {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+     }
+}
+
+.main-nav-icons {
+    display: inherit;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: var(--dark-400-color);
+    text-transform: uppercase;
+}
+
+/* Hero Section -> Hero Text and Cover Image */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    background-color: var(--hero-background-color);
+    padding: 1.7rem;
+}
+
+.hero-left-area {
+    max-width: 60ch;
+    & > h1 {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--primary-color);
+    }
+
+    & > p {
+        font-size: 0.8rem;
+        margin: 1.5rem 0;
+        color: var(--text-color);
+    }
+
+    & > button {
+        background-color: var(--secondary-color);
+        color: var(--white);
+    }
+}
+
+/* Main -> New Product Section, Weekly Discount Section, Top Selling Section */
+
+/* New Product Section */
+.new-product {
+    padding: 2rem;
+    & > h2 {
+        font-size: 1.5rem;
+        text-align: center;
+
+        & > span:first-child {
+            color: var(--primary-color);
+        }
+
+        & > span:last-child {
+            color: var(--secondary-color);
+        }
+    }
+}
+
+.new-product-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.new-product-carousel-button {
+    position: absolute;
+}
+
+.new-product-carousel-button:first-child {
+    left: 65px;
+}
+
+.new-product-carousel-button:last-child {
+    right: 65px;
+}
+
+.new-product-carousel-track {
+    display: inherit;
+    gap: 1rem;
+}
+
+.new-product-carousel-item > p {
+    font-weight: 600;
+    margin-top: 0.5rem;
+    text-align: center;
+    color: var(--dark-600-color);
+}
+
+/* Weekly Discount and Top Sellings Headers*/
+.weekly-discount-right-area, .top-sellings-left-area {
+     & > header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        & > h2 {
+            color: var(--primary-color);
+        }
+
+        & > button {
+            margin: 0;
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+    }
+}
+
+.weekly-discount-carousel, .top-sellings-carousel {
+    position: relative;
+}
+
+.weekly-discount-carousel-button {
+    position: absolute;
+    top: 120px;
+    right: -20px;
+}
+
+.top-sellings-carousel-button {
+    position: absolute;
+    top: 120px;
+    left: -20px;
+}
+
+/* Weekly Discount and Top Sellings Sections */
+.weekly-discount, .top-sellings {
+    display: flex;
+    padding: 2rem;
+    gap: 1.2rem;
+}
+
+/* Both section's carousels */
+.weekly-discount-carousel, .top-sellings-carousel {
+    display: flex;
+    align-items: center;
+}
+
+.weekly-discount-carousel-track, .top-sellings-carousel-track {
+    display: inherit;
+    gap: 1rem;
+}
+
+/* Footer Section -> Footer Contents and the Copyright Section */
+.footer-layout {
+    padding: 2rem;
+}
+
+.footer-layout-content {
+    display: flex;
+    align-items: start;
+    gap: 3rem;
+    justify-content: space-between;
+}
+
+.footer-layout-content-nav-list {
+    
+    & > ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 1rem;
+        column-gap: 2rem;
+
+        & > li > a {
+            color: var(--dark-400-color);
+        }
+    }
+}
+
+.footer-layout-content-social-media-form {
+    & > p {
+        max-width: 40ch;
+        margin-bottom: 1rem;
+    }
+
+    & > form {
+        margin-bottom: 1rem;
+    }
+}
+
+.footer-layout-copyright {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.7rem;
+}
