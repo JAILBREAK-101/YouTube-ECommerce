@@ -1,0 +1,10 @@
+/* Every Components would be styled in here: Buttons, Filters, Dropdowns, Pagination and So on.*/
+.category-button {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.category-button--active {
+    color: var(--primary-color);
+    background-color: var(--white);
+}
